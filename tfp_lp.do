@@ -12,21 +12,18 @@
 /*	using Stata, The Stata Journal, 18(3), pp. 618-662)                                   */
 /******************************************************************************************/
 
-/* do				"http://www.evens-salies.com/localhost" */
-cd				"C:\Users\evens\Documents"
+cd					"C:\Users\evens\Documents"
 cls
 macro drop all
-set	rmsg on			// Timer is on
 
-use				"chile_analysis.dta", clear
-order			*, alpha
-drop			CIIU3 ele2 ele3 ele4 exit k2* k3* k4 k_ele* fuel // water
-quie: tabulate	CIIU2
-dis				r(r)
-rename			(ANIO CIIU2 ID    ele    go   inv k) ///
-				(year a100  siren l_ener l_ca l_i l_k)
-rename			(skilled   unskilled   va water ) ///
-				(l_skilled l_unskilled l_v l_water)
+/*	To test my routine I replicate LP results obtained from Rovigati and Molisi's (2018) sample */
+use					"chile_analysis.dta", clear
+
+/*	Keep relevant variables only, rename ... */
+order				*, alpha
+drop				CIIU3 ele2 ele3 ele4 exit k2* k3* k4 k_ele* fuel // water
+rename			(ANIO CIIU2 ID    ele    go   inv k)(year a100  siren l_ener l_ca l_i l_k)
+rename			(skilled   unskilled   va water )(l_skilled l_unskilled l_v l_water)
 label variable 	year ""
 label variable 	a100 ""
 label variable 	siren ""
