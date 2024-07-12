@@ -1,15 +1,15 @@
-/******************************************************************************************/
-/*	Formating in progress																																	*/
-/*  Estimation de la productivité à la Levinsohn et Petrin (2003) 												*/
-/*	Evens Salies, OFCE (Sciences Po)																											*/
+/**********************************************************************				*/
+/*	Formating in progress									*/
+/*  Estimation de la productivité à la Levinsohn et Petrin (2003) 			    	*/
+/*	Evens Salies, OFCE (Sciences Po)							*/
 /*	v1: obtenir les mêmes résultats que levpet et prodest dans le cas de la VA, 03/2023.	*/
-/*	v2: acélération de ka routine, 2-3 fois plus rapide que levpet et prodest, 04/2023.		*/
-/*	v3: comparer à un algorithme de descente https://www.geeksforgeeks.org/how-						*/
-/*	to-implement-a-gradient-descent-in-python-to-find-a-local-minimum/										*/
-/*																																												*/	
-/*	Données reprises de la commande prodest (Rovigatti et Mollisi, 2018, Theory and				*/
-/*	practice of total-factor productivity estimation: The control function approach 			*/
-/*	using Stata, The Stata Journal, 18(3), pp. 618-662)                                   */
+/*	v2: acélération de ka routine, 2-3 fois plus rapide que levpet et prodest, 04/2023.	*/
+/*	v3: comparer à un algorithme de descente https://www.geeksforgeeks.org/how-		*/
+/*	to-implement-a-gradient-descent-in-python-to-find-a-local-minimum/			*/
+/*												*/	
+/*	Données reprises de la commande prodest (Rovigatti et Mollisi, 2018, Theory and		*/
+/*	practice of total-factor productivity estimation: The control function approach 	*/
+/*	using Stata, The Stata Journal, 18(3), pp. 618-662)                                   	*/
 /******************************************************************************************/
 
 cd					"C:\Users\evens\Documents"
