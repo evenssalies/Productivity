@@ -1,4 +1,4 @@
-/**********************************************************************				*/
+/************************************************************************************************/
 /*	Formating in progress									*/
 /*  Estimation de la productivité à la Levinsohn et Petrin (2003) 			    	*/
 /*	Evens Salies, OFCE (Sciences Po)							*/
@@ -10,31 +10,28 @@
 /*	Données reprises de la commande prodest (Rovigatti et Mollisi, 2018, Theory and		*/
 /*	practice of total-factor productivity estimation: The control function approach 	*/
 /*	using Stata, The Stata Journal, 18(3), pp. 618-662)                                   	*/
-/******************************************************************************************/
+/************************************************************************************************/
 
-cd					"C:\Users\evens\Documents"
 cls
 macro drop all
 
 /*	To test my routine I replicate LP results obtained from Rovigati and Molisi's (2018) sample */
-use					"chile_analysis.dta", clear
+use				"chile_analysis.dta", clear
 
 /*	Keep relevant variables only, rename ... */
 order				*, alpha
 drop				CIIU3 ele2 ele3 ele4 exit k2* k3* k4 k_ele* fuel // water
-rename			(ANIO CIIU2 ID    ele    go   inv k)(year a100  siren l_ener l_ca l_i l_k)
-rename			(skilled   unskilled   va water )(l_skilled l_unskilled l_v l_water)
-label variable 	year ""
-label variable 	a100 ""
-label variable 	siren ""
-order			year a100 siren, last
-xtset			siren year
+rename				(ANIO CIIU2 ID    ele    go   inv k) ///
+				(year a100  siren l_ener l_ca l_i l_k)
+rename				(skilled   unskilled   va  water ) ///
+				(l_skilled l_unskilled l_v l_water)
 
-generate		l_hours=l_skilled+l_unskilled
-clonevar		l_m=l_ener	/* Proxy, notée l_m, même si c'est l'énergie (élec.) */
-des
+/*	Declare the data as panel */
+xtset				siren year
 
-/*	La routine commence ici !!! */
+/*	For the exercise, let the l_m be the nrj (elec. variable), and define l_hours as the skilled and unskilled employees */
+generate			l_hours=l_skilled+l_unskilled
+clonevar			l_m=l_ener	
 
 /*	Variables utilisées : siren, year, l_v, l_k, l_hours, l_m 	*/
 /* STAGE 1.	beta_l */
