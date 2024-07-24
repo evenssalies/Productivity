@@ -19,19 +19,19 @@ macro drop all
 use				"chile_analysis.dta", clear
 
 /*	Keep relevant variables only, rename ... */
-order				*, alpha
-drop				CIIU3 ele2 ele3 ele4 exit k2* k3* k4 k_ele* fuel // water
-rename				(ANIO CIIU2 ID    ele    go   inv k) ///
-				(year a100  siren l_ener l_ca l_i l_k)
-rename				(skilled   unskilled   va  water ) ///
-				(l_skilled l_unskilled l_v l_water)
+order			*, alpha
+drop			CIIU3 ele2 ele3 ele4 exit k2* k3* k4 k_ele* fuel // water
+rename			(ANIO CIIU2 ID    ele    go   inv k) ///
+			(year a100  siren l_ener l_ca l_i l_k)
+rename			(skilled   unskilled   va  water ) ///
+			(l_skilled l_unskilled l_v l_water)
 
 /*	Declare the data as panel */
-xtset				siren year
+xtset			siren year
 
 /*	For the exercise, let the l_m be the nrj (elec. variable), and define l_hours as the skilled and unskilled employees */
-generate			l_hours=l_skilled+l_unskilled
-clonevar			l_m=l_ener	
+generate		l_hours=l_skilled+l_unskilled
+clonevar		l_m=l_ener	
 
 /*	Variables utilisées : siren, year, l_v, l_k, l_hours, l_m 	*/
 /* STAGE 1.	beta_l */
