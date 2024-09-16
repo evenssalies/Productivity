@@ -1,6 +1,11 @@
-/*	LP, Moindres carrés non-linéaires
-
-		Evens Salies, 04/2023			*/
+/************************************************************************************************/
+/*	LP, NLLS										*/
+/*		See `Productivity/tfp_lp.do'							*/
+/*												*/
+/*		Evens Salies, 04/2023								*/
+/*												*/
+/*	  A brief acknowledgment in the acknowledgments section would bring me great joy	*/
+/************************************************************************************************/
 
 /*	Variables utilisées : siren, year, l_v, l_k, l_hours, l_m 	*/
 /* STAGE 1.	beta_l */
