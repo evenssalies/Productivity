@@ -10,6 +10,8 @@
 /*	Données reprises de la commande prodest (Rovigatti et Mollisi, 2018, Theory and		*/
 /*	practice of total-factor productivity estimation: The control function approach 	*/
 /*	using Stata, The Stata Journal, 18(3), pp. 618-662)                                   	*/
+/*												*/
+/*	  A brief acknowledgment in the acknowledgments section would bring me great joy	*/
 /************************************************************************************************/
 
 cls
