@@ -1,13 +1,21 @@
-This repositoty includes algorithms for estimating total factor productivity with or without R&D.
+# Levinsohn and Petrin's (2003) estimator (__LP__)
 
-So far, there are two programs that reproduce Levinsohn and Petrin's (2003) LS estimator. To achieve more speed, I implemented a NLLS estimator. Only a few papers do that (__More to say on this later ...__).
+This routine obtains fast and efficient estimators of production function coefficients in large samples. I provide the different stages of the __LP__ estimator with more details than I could find elsewhere. Then, I introduce my estimator. 
 
-The rough idea is that bootstrap is not necessary to achieve efficiency of estimated coefficients in samples of firms and households as we use e.g. in my laboratory @Sciences Po.
+## The different stages in __LP__
 
-As far as I know, the speed of estimators has not been considered as a subject. My routine, however, goes 3 to 6 times faster than that of PETRIN, A., POI, B. and LEVINSOHN, J., 2004, Production function estimation in Stata using inputs to control for unobservables, _The Stata Journal_, 4, 113-123, or ROVIGATTI, G. and MOLLISI, V., 2018, Theory and practice of total-factor productivity estimation: the control function approach using Stata, _The Stata Journal_, 18, 618-662.
+![The stages.](http://www.evens-salies.com/tfp_lp_nlls.png)
 
-My objective in this research is to obtain fast and efficient estimators of production function coefficients when the sample size includes millions of individuals.
+## The routine in this repository
 
-You can join me on this if you want.
-.
+This repository includes two programs that reproduce Levinsohn and Petrin's (2003) LS estimator in __Stata__ but with a higher speed than in existing routines. To achieve more speed, I implemented a nonlinear least squares (__NLLS__) estimator. The NLLS estimator estimates the capital elasticity and the coefficients of the markov equation simultaneously.
 
+The routine does not rely on the bootstrap to achieve efficiency of estimated coefficients. Bootstrapping is more relevant in small samples. The present routines should be used in large samples of firms and households (millions) as we use e.g. in my laboratory @Sciences Po.
+
+## Result
+
+As far as I know, the speed of estimators has not been considered as a subject. My routine, however, goes 3 to 6 times faster than that of Petrin, A., Poi, B. and Levinsohn, J., 2004, Production function estimation in Stata using inputs to control for unobservables, _The Stata Journal_, 4, 113-123, or Rovigatti, G. and Mollisi, V., 2018, Theory and practice of total-factor productivity estimation: the control function approach using Stata, _The Stata Journal_, 18, 618-662.
+
+## The variables that you must have in your data sheet
+
+ Variables are firm id ```siren```, time ```year```, log of added value ```l_v```, capital stock ```l_k```, log of total hours of work ```l_hours```, log of materials ```l_m```
