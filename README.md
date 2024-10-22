@@ -2,9 +2,9 @@
 
 This routine obtains fast and efficient estimators of production function coefficients in large samples. I provide the different stages of the __LP__ estimator with more details than I could find elsewhere. Then, I introduce my estimator. 
 
-## The different stages in __LP__
+## The different stages in __LP__ (in French!)
 
-![The stages.](http://www.evens-salies.com/tfp_lp_nlls.png)
+![Stages.](http://www.evens-salies.com/tfp_lp_nlls.png)
 
 ## The routine in this repository
 
