@@ -20,10 +20,10 @@ I decided not to make a command, for the code is short enough; so, it is more in
 
  - firm id:---------------------```siren```,
  - time:------------------------```year```,
- - log of added value:----------```l_v```,
- - capital stock:---------------```l_k```,
+ - log of added value:--------```l_v```,
+ - capital stock:----------------```l_k```,
  - log of total hours of work:--```l_hours```,
- - log of materials:------------```l_m```.
+ - log of materials:-------------```l_m```.
 
 __Bon voyage__ 
 :+1:
