@@ -6,11 +6,9 @@ This routine obtains fast and efficient estimators of production function coeffi
 
 ![Stages.](http://www.evens-salies.com/tfp_lp_nlls.png)
 
-## The routine in this repository
+## The routine ```tfp_lp_nlls.do```
 
-This repository includes two programs that reproduce Levinsohn and Petrin's (2003) LS estimator in __Stata__ but with a higher speed than in ```levpet``` and ```profest```. To achieve more speed, I implemented a nonlinear least squares (__NLLS__) estimator. The NLLS estimator estimates the capital elasticity and the coefficients of the markov equation simultaneously. Basicaly, step 4-6 are merged into one __Stata__ command.
-
-The routine does not rely on the bootstrap to achieve efficiency of estimated coefficients. Bootstrapping is more relevant in small samples. The present routines should be used in large samples of firms and households (millions) as we use e.g. in my laboratory @Sciences Po.
+This repository includes two programs that reproduce Levinsohn and Petrin's (2003) LS estimator in __Stata__ but with a higher speed than in ```levpet``` and ```profest```. To achieve more speed, I implemented a nonlinear least squares (__NLLS__) estimator. The NLLS estimator estimates the capital elasticity and the coefficients of the markov equation simultaneously. Basicaly, step 4-6 are merged into one __Stata__ command. The routine does not rely on the bootstrap to achieve efficiency of estimated coefficients. Bootstrapping is more relevant in small samples. The present routines should be used in large samples of firms and households (millions) as we use e.g. in my laboratory @Sciences Po.
 
 ## Result
 
