@@ -18,12 +18,12 @@ Another advantage is that you don't need to use your own grid search or other op
 
 I decided not to make a command, for the code is short enough; so, it is more interesting I think for you to copy-paste ```tfp_lp_nlls.do``` into your own code. Before, you'll have to rename your variables for firm id, time, added-value, etc. to:
 
- - firm id:----------------------```siren```,
- - time:-------------------------```year```,
- - log of added value:---------```l_v```,
- - capital stock:----------------```l_k```,
- - log of total hours of work:--```l_hours```,
- - log of materials:-------------```l_m```.
+ - firm id: ```siren```,
+ - time: ```year```,
+ - log of added value: ```l_v```,
+ - capital stock: ```l_k```,
+ - log of total hours of work: ```l_hours```,
+ - log of materials: ```l_m```.
 
 __Bon voyage__ 
 :+1:
