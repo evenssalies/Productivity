@@ -16,4 +16,13 @@ As far as I know, the speed of productivity estimation is not very considered as
 
 ## The variables that you must have in your data sheet
 
- Variables are firm id ```siren```, time ```year```, log of added value ```l_v```, capital stock ```l_k```, log of total hours of work ```l_hours```, log of materials ```l_m```
+ I decided not to make a command, for the code is short so it is more interesting I think for you to copy-paste it into your own code. You'll just have to rename your variables (firm id, time, added-value, etc.) to:
+ 
+ - firm id ```siren```,
+ - time ```year```,
+ - log of added value ```l_v```,
+ - capital stock ```l_k```,
+ - log of total hours of work ```l_hours```,
+ - log of materials ```l_m```.
+
+__Bon voyage__
