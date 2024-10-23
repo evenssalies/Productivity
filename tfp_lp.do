@@ -120,12 +120,12 @@ generate		myomega_prodest=phi_hat-beta_k*l_k
 
 /* La routine s'arrête ici !!! */
 
-/**************************************************/
-/*	Comparaison des temps de calcul :			  */
-/*	Productivités estimées avec levpet et prodest */
-/*		Remarque : prodest estime 2 productivités */
-/*				   à la LP (avec et sans eta) 	  */
-/**************************************************/
+/****************************************************************/
+/*	Comparaison des temps de calcul :			*/
+/*	Productivités estimées avec levpet et prodest 		*/
+/*		Remarque : prodest estime 2 productivités 	*/
+/*				   à la LP (avec et sans eta)	*/
+/****************************************************************/
 
 display			c(rmsg_time)
 levpet			l_v, free(l_hours) proxy(l_m) capital(l_k) valueadded ///
