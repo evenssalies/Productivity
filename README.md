@@ -1,8 +1,10 @@
 # Levinsohn and Petrin's (2003) estimator (__LP__)
 
-This routine obtains fast and efficient estimators of production function coefficients in large samples. I provide the different stages of the __LP__ estimator with more details than I could find elsewhere. Then, I introduce my estimator. Mail me with <span
-                                                                                                                                                                                                                                                             style="color: #FF00FF;"> warm cheers
-                                                                                                                                                                                                                                                             </span>
+This routine obtains fast and efficient estimators of production function coefficients in large samples. I provide the different stages of the __LP__ estimator with more details than I could find elsewhere. Then, I introduce my estimator. Mail me with
+
+<span
+  style="color: red;"> warm cheers
+</span>
 
 at [evens.salies@sciencespo.fr](evens.salies@sciencespo.fr) if my presentation below is useful in your work.
 
