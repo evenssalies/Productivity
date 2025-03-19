@@ -1,6 +1,6 @@
 # Levinsohn and Petrin's (2003) estimator (__LP__)
 
-This routine obtains fast and efficient estimators of production function coefficients in large samples. I provide the different stages of the __LP__ estimator with more details than I could find elsewhere. Then, I introduce my <ins> Nonlinear Least Squares Estimator of LP </ins>. Mail me with _warm cheers_ at [evens.salies@sciencespo.fr](mailto:evens.salies@sciencespo.fr) if my presentation below is useful to your work, or if you want to collaborate with me on this rutine.
+This routine obtains fast and efficient estimators of production function coefficients in large samples. I provide the different stages of the __LP__ estimator with more details than I could find elsewhere. Then, I introduce my <ins> Nonlinear Least Squares Estimator of LP </ins>. Mail me with _warm cheers_ at [evens.salies@sciencespo.fr](mailto:evens.salies@sciencespo.fr) if my presentation below is useful to your work, or if you want to collaborate with me on this routine.
 
 ## Estimation stages in __LP__
 
