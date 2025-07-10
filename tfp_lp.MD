@@ -1,6 +1,6 @@
 ### A blend of ideas to put in form later
 
-package st0537 ```prodest''', by Rovigatti and Molisi (2018) with the Chile data file. 
+package st0537 ```prodest```, by Rovigatti and Molisi (2018) with the Chile data file. 
 
 @article{rovigatti2018theory,
   title={Theory and practice of total-factor productivity estimation: The control function approach using Stata},
