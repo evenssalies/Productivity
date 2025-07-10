@@ -6,7 +6,7 @@ The section below documents the different stages of the __LP__ estimator (in Fre
 
 ## Estimation stages in __LP__
 
-<img src="http://www.evens-salies.com/tfp_lp_nlls.png" alt="Estimation stages" width="200">
+<img src="http://www.frequency.fr/tfp_lp_nlls.png" alt="Estimation stages" width="200">
 
 ## The routine ```tfp_lp_nlls.do```
 
